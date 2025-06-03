@@ -20,12 +20,12 @@
 •  Cập nhật hệ thống:
 #sudo apt update && sudo apt upgrade -y
 Cài Python và pip:
-#sudo apt install python3 python3-pip -y
+0. sudo apt install python3 python3-pip -y
 Cài thư viện Python cho bot Telegram:
 #pip3 install python-telegram-bot
 5. Viết mã bot Telegram
 •  Tạo file Python (ví dụ: bot.py):
-#nano bot.py
+0.  nano bot.py
 Ví dụ 
 
 #"from telegram.ext import Updater, CommandHandler
