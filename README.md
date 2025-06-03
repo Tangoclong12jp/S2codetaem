@@ -18,21 +18,20 @@
 	•  Hoặc dùng công cụ như PuTTY hoặc terminal local với gcloud compute ssh [INSTANCE_NAME].
 4. Cài đặt môi trường lập trình trên VM
 •  Cập nhật hệ thống:
-sudo apt update && sudo apt upgrade -y
+#sudo apt update && sudo apt upgrade -y
 Cài Python và pip:
-sudo apt install python3 python3-pip -y
+#sudo apt install python3 python3-pip -y
 Cài thư viện Python cho bot Telegram:
-pip3 install python-telegram-bot
+#pip3 install python-telegram-bot
 5. Viết mã bot Telegram
 •  Tạo file Python (ví dụ: bot.py):
-nano bot.py
+#nano bot.py
 Ví dụ 
 
-from telegram.ext import Updater, CommandHandler
+#"from telegram.ext import Updater, CommandHandler
 
 def start(update, context):
     update.message.reply_text('Xin chào! Tôi là bot của bạn.')
-
 def main():
     # Thay YOUR_TOKEN bằng token từ BotFather
     updater = Updater("YOUR_TOKEN", use_context=True)
@@ -42,16 +41,16 @@ def main():
     updater.idle()
 
 if __name__ == '__main__':
-    main()
+    main()"
 
 6. Chạy bot
 •  Chạy file Python:
-python3 bot.py
+#python3 bot.py
 •  Bot sẽ hoạt động, thử vào Telegram, nhắn /start để kiểm tra.
 7. Chạy bot nền
 •  Để bot chạy liên tục, dùng screen hoặc nohup:
 screen
-python3 bot.py
+#python3 bot.py
 Nhấn Ctrl+A, sau đó D để thoát screen mà vẫn chạy bot.
 .Hoặc dùng nohup:
- nohup python3 bot.py &
+ #nohup python3 bot.py &
