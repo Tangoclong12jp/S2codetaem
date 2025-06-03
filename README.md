@@ -55,8 +55,7 @@ Cài thư viện Python cho bot Telegram:
 
 Ví dụ 
 
-	(from telegram.ext import Updater, CommandHandler
-def start(update, context):
+	(from telegram.ext import Updater, CommandHandlerdef start(update, context):
 	  update.message.reply_text('Xin chào! Tôi là bot của bạn.')
 	def main():
 	    # Thay YOUR_TOKEN bằng token từ BotFather
