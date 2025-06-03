@@ -83,6 +83,7 @@ screen
 	python3 bot.py
 
 Nhấn Ctrl+A, sau đó D để thoát screen mà vẫn chạy bot.
-.Hoặc dùng nohup:
+
+Hoặc dùng nohup:
 
 	nohup python3 bot.py &
